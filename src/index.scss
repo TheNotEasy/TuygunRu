@@ -1,0 +1,14 @@
+@font-face {
+  src: url("/src/assets/Roboto-Regular.ttf");
+  font-family: Roboto;
+}
+
+:root {
+  font-family: Roboto, system-ui, sans-serif;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

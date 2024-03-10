@@ -1,0 +1,38 @@
+.header {
+  align-items: center;
+  justify-content: space-between;
+
+  flex-direction: row;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header__logo-large {
+  height: 40px;
+}
+
+.header__logo-mascot {
+  display: none;
+
+  height: 80px;
+}
+
+.header__logo-large, .header__logo-mascot {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+  .header__logo-large {
+    display: none;
+  }
+
+  .header__logo-mascot {
+    display: unset;
+  }
+}

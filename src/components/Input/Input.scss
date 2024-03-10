@@ -1,0 +1,7 @@
+.app-input {
+  background: var(--app-color-light);
+
+  &::placeholder {
+    color: var(--app-color-light-shade);
+  }
+}

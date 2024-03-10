@@ -1,0 +1,29 @@
+:root {
+    --app-color-primary: #0071BB;
+    --app-color-primary-rgb: 0,113,187;
+    --app-color-primary-contrast: #ffffff;
+    --app-color-primary-contrast-rgb: 255,255,255;
+    --app-color-primary-shade: #0063a5;
+    --app-color-primary-tint: #1a7fc2;
+
+    --app-color-success: #00FF85;
+    --app-color-success-rgb: 0,255,133;
+    --app-color-success-contrast: #000000;
+    --app-color-success-contrast-rgb: 0,0,0;
+    --app-color-success-shade: #00e075;
+    --app-color-success-tint: #1aff91;
+
+    --app-color-light: #EFEFEF;
+    --app-color-light-rgb: 239,239,239;
+    --app-color-light-contrast: #000000;
+    --app-color-light-contrast-rgb: 0,0,0;
+    --app-color-light-shade: #949494;
+    --app-color-light-tint: #f1f1f1;
+
+    --app-color-danger: #ff9ea9;
+    --app-color-danger-rgb: 255,158,169;
+    --app-color-danger-contrast: #000000;
+    --app-color-danger-contrast-rgb: 0,0,0;
+    --app-color-danger-shade: #e08b95;
+    --app-color-danger-tint: #ffa8b2;
+}
