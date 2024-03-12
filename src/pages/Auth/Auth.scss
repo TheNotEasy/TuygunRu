@@ -1,3 +1,96 @@
 .auth__link {
-  margin: 50px auto 0;
+  color: var(--app-color-primary-contrast);
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+
+  .card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: clamp(20px, 1.6vw, 40px);
+
+    h1 {
+      font-size: clamp(30px, 3.5vw, 40px);
+    }
+  }
+
+  .auth-card__signup-button {
+    width: 100%;
+  }
+}
+
+.auth__card {
+  background-color: var(--app-color-primary);
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.auth {
+  justify-content: space-around;
+
+  gap: 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  text-align: center;
+  padding: 50px;
+
+  color: var(--app-color-primary-contrast);
+
+  form {
+    box-sizing: content-box;
+
+    max-width: 300px;
+    width: 100%;
+    background-color: var(--app-color-primary-shade);
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  a.button {
+    padding: 20px;
+    background-color: white;
+
+    border-radius: 10px;
+
+    color: black;
+    text-decoration: none;
+  }
+}
+
+//.auth > * {
+//  margin: 0 auto;
+//}
+
+.auth__signup-button {
+  display: none;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .auth {
+    gap: 50px;
+
+    .form {
+      max-width: 100%;
+    }
+  }
+
+  .auth__signup-button {
+    display: unset;
+
+    max-width: 500px;
+  }
+
+  .auth-card__signup-button {
+    display: none;
+  }
 }

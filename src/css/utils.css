@@ -1,5 +1,6 @@
 #root {
     display: flex;
+    padding-bottom: 50px;
 }
 
 html {
@@ -8,13 +9,29 @@ html {
 }
 
 .container {
-    padding: 0 20px;
     margin: 0 auto;
 
-    width: 100%;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
+}
+
+.container:not(.fullwide) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-center {
+    align-items: center;
+}
+
+.container.fullwide {
+    width: 100%;
+}
+
+.container-gap {
+    margin-top: 50px;
 }
 
 a {
@@ -49,5 +66,6 @@ a {
 
 .container__title {
     font-size: 40px;
-    margin: 50px auto;
+    margin: 0 auto 50px;
+    text-align: center;
 }

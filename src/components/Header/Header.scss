@@ -6,11 +6,19 @@
 
   padding-top: 20px;
   padding-bottom: 20px;
+
+  gap: 20px;
+
+  height: 80px;
 }
 
 .header__nav {
   display: flex;
   gap: 10px;
+
+  height: 100%;
+
+  align-items: center;
 }
 
 .header__logo-large {
@@ -27,12 +35,20 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 600px) {
+  .header {
+    height: 120px;
+  }
+
   .header__logo-large {
     display: none;
   }
 
   .header__logo-mascot {
     display: unset;
+  }
+
+  .md-optional {
+    display: none;
   }
 }

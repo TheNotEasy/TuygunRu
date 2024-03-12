@@ -1,0 +1,30 @@
+.header-button {
+  display: flex;
+
+  background-color: var(--app-color-primary);
+  color: white;
+
+  height: 50px;
+
+  align-items: center;
+  gap: 20px;
+
+  border-radius: 10px;
+  padding: 20px;
+
+  text-decoration: none;
+}
+
+.header-button__image-hide {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .header-button__text {
+    display: none;
+  }
+
+  .header-button__image-hide {
+    display: unset;
+  }
+}

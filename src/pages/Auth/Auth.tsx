@@ -1,6 +1,4 @@
-import {createPage} from "@/pages/Base.tsx";
 import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom";
 
 import './Auth.scss'
 
@@ -11,30 +9,33 @@ export type SignInInputs = {
   password: string,
 }
 
-function AuthContent() {
+export function Auth() {
   const {
     register,
-    handleSubmit,
   } = useForm<SignInInputs>()
 
   return (
-    <div className="container auth">
-      <h1 className="container__title">
-        Авторизация
-      </h1>
+    <div className="auth__card">
+      <div className="container auth">
+        <div className="card-left">
+          <div className="card__text">
+            <h1>Туйгун.Ру</h1>
+            <p>образовательная платформа якутского языка</p>
+          </div>
+          <a href="/signup" className="button auth-card__signup-button">Зарегистрироваться</a>
+        </div>
 
-      <form className="form">
-        <input type="email" {...register("email")} placeholder="Почта" />
-        <input type="password" {...register("password")} placeholder="Пароль" autoComplete='current-password' />
+        <form className="form">
+          <input type="email" {...register("email")} placeholder="Почта"/>
+          <input type="password" {...register("password")} placeholder="Пароль" autoComplete='current-password'/>
 
-        <br />
+          <br/>
 
-        <input type="submit" value="Войти" />
-      </form>
+          <input type="submit" value="Войти" />
+        </form>
 
-      <Link className="auth__link" to="/signin">У меня нет аккаунта</Link>
+        <a href="/signup" className="button auth__signup-button">Зарегистрироваться</a>
+      </div>
     </div>
   )
 }
-
-export const Auth = createPage(<AuthContent></AuthContent>, [])

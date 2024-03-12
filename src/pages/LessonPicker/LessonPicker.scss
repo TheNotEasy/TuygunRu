@@ -1,0 +1,17 @@
+.picker {
+  gap: 20px;
+}
+
+.picker__lessons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.picker__title {
+  margin: 0 auto;
+  font-size: 32px;
+}
