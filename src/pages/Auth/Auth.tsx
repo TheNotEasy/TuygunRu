@@ -1,6 +1,8 @@
 import {useForm} from "react-hook-form";
 
 import './Auth.scss'
+import React from "react";
+import {Link} from "react-router-dom";
 
 type Email = `${string}@${string}.${string}`
 
@@ -22,7 +24,7 @@ export function Auth() {
             <h1>Туйгун.Ру</h1>
             <p>образовательная платформа якутского языка</p>
           </div>
-          <a href="/signup" className="button auth-card__signup-button">Зарегистрироваться</a>
+          <Link to="/signup" className="button auth-card__signup-button">Зарегистрироваться</Link>
         </div>
 
         <form className="form">
