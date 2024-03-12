@@ -1,7 +1,6 @@
 import {useForm} from "react-hook-form";
 
 import './Auth.scss'
-import React from "react";
 import {Link} from "react-router-dom";
 
 type Email = `${string}@${string}.${string}`
@@ -36,7 +35,7 @@ export function Auth() {
           <input type="submit" value="Войти" />
         </form>
 
-        <a href="/signup" className="button auth__signup-button">Зарегистрироваться</a>
+        <Link to="/signup" className="button auth__signup-button">Зарегистрироваться</Link>
       </div>
     </div>
   )
