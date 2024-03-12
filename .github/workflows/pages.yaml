@@ -2,7 +2,7 @@
 name: Deploy static content to Pages
 
 env:
-  WEB_BASE_URL: '/{{ github.event.repository.name }}/'
+  WEB_BASE_URL: '/TuygunRu/'
 
 on:
   # Runs on pushes targeting the default branch
