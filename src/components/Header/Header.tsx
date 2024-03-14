@@ -14,7 +14,8 @@ import back from "@/assets/back.svg"
 
 const LogoutButton = <HeaderButton text="Выйти" icon={logout} key="logout" link="/logout" onlyOne />
 const CreateLessonButton = <HeaderButton text="Создать урок" icon={add} key="create-lesson" link="/lesson-picker" />
-const BackToClassroomButton = <HeaderButton text="Назад" icon={back} link='/classroom' onlyOne />
+const BackToClassroomButton = <HeaderButton text="Назад" icon={back} key="back-to-classroom" link='/classroom' onlyOne />
+const BackToLessonsButton = <HeaderButton text="Назад" icon={back} key="back-to-lessons" link='/lesson-picker' onlyOne />
 
 const navigations: Record<string, JSX.Element[]> = {
   '/classroom': [
@@ -22,6 +23,7 @@ const navigations: Record<string, JSX.Element[]> = {
     LogoutButton
   ],
   '/lesson-picker': [BackToClassroomButton, LogoutButton],
+  '/lesson': [BackToLessonsButton],
 }
 
 export function Header() {

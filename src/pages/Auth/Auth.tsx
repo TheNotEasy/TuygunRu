@@ -13,6 +13,7 @@ export type SignInInputs = {
 export function Auth() {
   const {
     register,
+    handleSubmit
   } = useForm<SignInInputs>()
 
   return (
@@ -26,9 +27,9 @@ export function Auth() {
           <Link to="/signup" className="button auth-card__signup-button">Зарегистрироваться</Link>
         </div>
 
-        <form className="form">
-          <input type="email" {...register("email")} placeholder="Почта"/>
-          <input type="password" {...register("password")} placeholder="Пароль" autoComplete='current-password'/>
+        <form className="form" onSubmit={handleSubmit(console.log)}>
+          <input type="email" {...register("email")} placeholder="Почта" />
+          <input type="password" {...register("password")} placeholder="Пароль" autoComplete='current-password' minLength={8} />
 
           <br/>
 

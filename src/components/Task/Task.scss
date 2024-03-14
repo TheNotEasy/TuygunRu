@@ -10,7 +10,8 @@
   width: min-content;
 
   border-radius: 10px;
-  margin-top: 20px;
+
+  position: relative;
 }
 
 .task__name {
@@ -19,6 +20,7 @@
 
 .task__floor {
   display: flex;
+  align-items: center;
 }
 
 .task__upper {
@@ -70,4 +72,79 @@
   place-items: center;
 
   color: var(--app-color-light-shade);
+}
+
+.task__more-wrapper {
+  display: contents;
+}
+
+.task__more {
+  background-image: url("/src/assets/more.svg");
+  background-repeat: no-repeat;
+  height: 13px;
+  width: 3px;
+
+  position: relative;
+
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: '';
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: -13px;
+    top: -7px;
+  }
+}
+
+.task__menu {
+  position: absolute;
+  right: -120px;
+  top: 0;
+
+  width: 100px;
+
+  border-radius: 10px;
+  border: var(--app-color-light-shade) solid 2px;
+
+  background-color: var(--app-color-light);
+
+  display: none;
+  flex-direction: column;
+
+  z-index: 3;
+}
+
+.task__menu.toggled {
+  display: flex;
+}
+
+.task__menu-btn {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  animation: ease-out appearing 0.3s;
+
+  padding: 10px;
+
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: var(--app-color-light-shade);
+  }
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
