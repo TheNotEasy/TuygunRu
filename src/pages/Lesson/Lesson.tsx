@@ -31,9 +31,9 @@ export function Lesson() {
       <div className="container container-gap">
         <h1 className="lesson__title">{lesson.name}</h1>
         <div className="lesson__tabs">
-          <Link to="video">Сананыы уерэтии</Link>
-          <Link to="about">Айар улэ</Link>
-          {/*<Link to="video">Бэрэбиэркэлээ бэйэгин</Link>*/}
+          <Link to="video">Саҥаныы үөрэтии</Link>
+          <Link to="about">Айар үлэ</Link>
+          {/*<Link to="video">Бэрэбиэркэлээ бэйэҕин</Link>*/}
           {/*<Link to="video">Кылгастык</Link>*/}
         </div>
         <div className="lesson__content">
